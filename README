@@ -1,0 +1,7 @@
+vector - a simple vector container for strings.
+
+$ ./a.out this is a test.
+vec[0]: address: 0x114e050: this
+vec[1]: address: 0x114e070: is
+vec[2]: address: 0x114e090: a
+vec[3]: address: 0x114e030: test.
