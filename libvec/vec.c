@@ -44,7 +44,7 @@ void vec_show(vector_t *p)
 	size_t size = p->_size;
 	int i;
 	for (i=0; i<size; i++)
-		printf("vec[%d]: address: %p: %s\n", i, p->_str[i], p->_str[i]);
+		printf("vec[%d]: address: %p: %s\n", i, &p->_str[i], p->_str[i]);
 }
 
 void vec_clear(vector_t *p)
