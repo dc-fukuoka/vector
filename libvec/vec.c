@@ -10,13 +10,13 @@ vector_t *vec_push(vector_t *q, const char *str) {
 	if (!q) {
 		p = (vector_t*)malloc(sizeof(*p));
 		p->_str = (char**)malloc(sizeof(*(p->_str))*size);
-		p->_str[size-1] = malloc(sizeof(*str)*strlen(str));
+		p->_str[size-1] = malloc(sizeof(*str)*(strlen(str)+1));
 		strcpy(p->_str[size-1], str);
 		p->_size = size++;
 		return p;
 	} else {
 		q->_str = (char**)realloc(q->_str, sizeof(*(q->_str))*size);
-		q->_str[size-1] = malloc(sizeof(*str)*strlen(str));
+		q->_str[size-1] = malloc(sizeof(*str)*(strlen(str)+1));
 		strcpy(q->_str[size-1], str);
 		q->_size = size++;
 		return q;
